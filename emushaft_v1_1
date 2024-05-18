@@ -9,7 +9,6 @@
 HCDisplay HCDisplay;    //Creates an instance of the HCDisplay library
 
 
-/* Some default values to initialise the touch sensor with */
 #define X_RAW_MIN 157
 #define X_RAW_MAX 850
 #define Y_RAW_MIN 105
@@ -90,7 +89,7 @@ void loop()
     AveX /= 100;
     AveY /= 100;
 
-    /* Store the min and max X and Y raw values */
+  
     if(AveX < XMin)
       XMin = AveX;
 
